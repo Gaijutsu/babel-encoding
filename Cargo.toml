@@ -1,0 +1,16 @@
+[package]
+name = "babel-encoding"
+version = "0.1.0"
+edition = "2021"
+
+[target.x86_64-pc-windows-gnu]
+rustflags = ["-C", "target-feature=+crt-static"]
+linker = "x86_64-w64-mingw32-gcc"
+
+[dependencies]
+num-bigint = "0.4.6"
+num-integer = "0.1.46"
+num-traits = "0.2.19"
+num_cpus = "1.16.0"
+rand = "0.8.5"
+rayon = "1.10.0"
